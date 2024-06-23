@@ -40,5 +40,10 @@ form.addEventListener("submit", function (event) {
       model.style.display = "none";
       document.getElementById("raceForm").reset();
     }
+
+    let printButton = document.getElementById("print");
+    printButton.addEventListener("click", function () {
+      window.print();
+    });
   });
 });
